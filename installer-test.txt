@@ -1,0 +1,11 @@
+Minit 0.3 Windows installer validation
+2026-10-19
+PASS Inno Setup 6.7.3 compilation
+PASS silent current-user installation to an isolated test folder, exit 0
+PASS desktop and Start menu shortcuts point to the installed executable
+PASS Windows Apps uninstall registration
+PASS installed MinitBrowser.exe --self-test, exit 0 (see Minit-Setup-App-Test.txt)
+PASS silent uninstall, exit 0
+PASS executable, shortcuts and uninstall registration removed
+PASS existing top-level user profile metadata hashes unchanged by uninstall
+Limits: wizard pages and missing-WebView2 path were not tested interactively; no clean-VM or upgrade test.

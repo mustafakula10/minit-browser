@@ -6,7 +6,7 @@
 
 ## Download v0.3
 
-Get **Minit-v0.3-Windows-x64.zip** from [Releases](https://github.com/mustafakula10/minit-browser/releases). Extract the entire folder and run `MinitBrowser.exe`. A separate .NET installation is not required. [Microsoft Edge WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/) must be installed. The app is unsigned; this is an experimental preview, not a production browser replacement.
+Choose **Minit-v0.3-Windows-x64-Setup.exe** for installation, or the **Minit-v0.3-MIT-Windows-x64.zip** portable package from [Releases](https://github.com/mustafakula10/minit-browser/releases). Extract the entire folder and run `MinitBrowser.exe`. A separate .NET installation is not required. [Microsoft Edge WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/) must be installed. The app is unsigned; this is an experimental preview, not a production browser replacement.
 
 Lower RAM usage than Chrome has **not** been benchmarked. The goal is to reduce background-tab load; the displayed working-set sum is approximate and may double-count shared memory.
 
@@ -71,3 +71,19 @@ Third-party components retain their own terms. Microsoft Edge WebView2 Runtime i
 
 Minit kaynak kodu, özgün görselleri ve belgeleri MIT lisansıyla açık kaynaktır. Telif ve lisans bildirimini koruyarak kullanabilir, değiştirebilir ve ticari olarak da dağıtabilirsin. WebView2 Runtime ayrı Microsoft lisansına tabidir.
 
+
+## Windows installer
+
+Download **Minit-v0.3-Windows-x64-Setup.exe** from Releases and run it. It installs for the current Windows user under `%LOCALAPPDATA%\Programs\Minit`, creates Start menu shortcuts and offers an optional desktop shortcut. Windows Settings → Apps includes an uninstall entry. Uninstall preserves your browser profile and preferences under `%LOCALAPPDATA%\MinitBrowser`.
+
+Requirements: Windows 10 version 2004 (build 19041) or later, x64-compatible CPU, and Microsoft Edge WebView2 Evergreen Runtime. Setup checks for WebView2 and explains how to install it from Microsoft if missing; it does not download or install it automatically. No separate .NET installation is needed. Setup and the app are unsigned previews.
+
+To build the installer, install [Inno Setup 6.7+](https://jrsoftware.org/isdl.php), then run:
+
+```powershell
+./build-setup.ps1 -IsccPath 'C:\Program Files (x86)\Inno Setup 6\ISCC.exe'
+```
+
+The MIT-licensed installer source is `minit-setup.iss`. Outputs and SHA-256 are written to `dist/`.
+
+**Türkçe:** Setup.exe normal kurulum yapar. Başlat menüsü kısayollarını ve kaldırma kaydını ekler; masaüstü kısayolu isteğe bağlıdır. Kaldırma sırasında kişisel tarayıcı verileri korunur. WebView2 yoksa Microsoft'un indirme adresi gösterilir.

@@ -1,5 +1,12 @@
 # Changelog
 
+## Installer update — 2026-10-19
+
+- Added MIT-licensed Inno Setup source and build script.
+- Added current-user Setup.exe, optional desktop shortcut, Start menu and uninstall registration.
+- Installer checks WebView2 availability and preserves browser profile data on uninstall.
+- Tested installation, shortcuts, installed app self-test and uninstallation.
+
 ## 0.3 — 2026-10-19
 
 - Renamed Minti to Minit; added an original logo and executable icon.
@@ -15,3 +22,4 @@
 ## 0.1
 
 - Initial WebView2 shell with tabs, background unloading and session-address storage.
+

@@ -8,3 +8,4 @@ publish/
 *.zip
 error.txt
 WebData/
+dist/
