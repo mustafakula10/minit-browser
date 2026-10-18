@@ -1,0 +1,10 @@
+bin/
+obj/
+.vs/
+publish/
+*.user
+*.pdb
+*.exe
+*.zip
+error.txt
+WebData/

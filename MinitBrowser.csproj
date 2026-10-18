@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>MinitBrowser</AssemblyName>
+    <RootNamespace>MinitBrowser</RootNamespace>
+    <ApplicationIcon>Assets/minit.ico</ApplicationIcon>
+    <Version>0.3.0</Version>
+    <Product>Minit Browser</Product>
+    <Description>Windows browser prototype with lightweight tab management</Description>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Form1.cs;Form1.Designer.cs" />
+    <EmbeddedResource Include="Assets/minit.ico" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.4258.31" />
+  </ItemGroup>
+
+<Target Name="RemoveUnusedWpf" BeforeTargets="ResolveAssemblyReferences" AfterTargets="ResolveProjectReferences"><ItemGroup><Reference Remove="@(Reference)" Condition="'%(Filename)' == 'Microsoft.Web.WebView2.Wpf'" /></ItemGroup></Target>
+</Project>

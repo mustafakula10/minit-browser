@@ -1,0 +1,10 @@
+PASS address resolution and blocked script scheme
+PASS actual WebView2 rendering and JavaScript
+PASS configured sleep expiry disposes inactive renderer; pinned and active tabs protected
+PASS navigation button layout
+PASS unloaded tab recreated
+PASS session URLs persisted
+PASS borderless frame, logo icon, resize corners, translucent rim toggle and maximize/restore
+PASS settings UI save, persistence, engine selection, live zoom and disabled sleep
+PASS responsive home, four settings pages, corrupt-config recovery, validation and history deduplication
+SUCCESS
