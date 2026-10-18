@@ -1,6 +1,6 @@
 # Minit Browser
 
-**A quieter Windows browser prototype.** Native dark/light themes, a custom window frame, translucent edges and configurable sleeping tabs — built with C# / .NET 10 WinForms and Microsoft Edge WebView2.
+**An open-source Windows browser prototype, licensed under MIT.** Native dark/light themes, a custom window frame, translucent edges and configurable sleeping tabs — built with C# / .NET 10 WinForms and Microsoft Edge WebView2.
 
 ![Minit Browser preview](preview.png)
 
@@ -61,8 +61,13 @@ Minit implements no user account or cloud synchronization. Websites, search engi
 
 ## Status and rights
 
-An AI-assisted learning prototype, version 0.3. Source is published for review; no open-source license has been selected for the Minit application. Third-party components retain their own terms; included license and notice files cover WebView2, .NET and Windows Forms.
+An AI-assisted learning prototype, version 0.3. Minit source code, original assets and documentation are released under the [MIT License](LICENSE). You may use, modify, fork and redistribute them, including commercially, while retaining the copyright and license notice. Contributions are welcome through issues and pull requests under the same license.
+
+Third-party components retain their own terms. Microsoft Edge WebView2 Runtime is a separately licensed Microsoft component and is not made open source by the Minit license. Included license and notice files cover WebView2, .NET and Windows Forms.
 
 ## Türkçe
 
 **Minit**, Windows için sekme yönetimine odaklanan bir tarayıcı prototipidir. Klasik Windows başlığı yerine özel pencere düğmeleri, logo ve yarı saydam dış kenarlar kullanır. **Ayarlar** bölümünden tema, arama motoru, uyku süresi, yakınlaştırma, indirme klasörü ve geçmiş kaydı değiştirilebilir. Eklenti/gizli mod/eşitleme yoktur; Chrome ile RAM kıyaslaması yapılmamıştır.
+
+Minit kaynak kodu, özgün görselleri ve belgeleri MIT lisansıyla açık kaynaktır. Telif ve lisans bildirimini koruyarak kullanabilir, değiştirebilir ve ticari olarak da dağıtabilirsin. WebView2 Runtime ayrı Microsoft lisansına tabidir.
+
